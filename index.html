@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
-  <title>styled Components</title>
-
+  <title>Redux</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  <main>
-    <h1>
-      La mejor. <br>
-      Para los mejores
-    </h1>
-    <div class="hero">
-      <div class="wrapper">
-        <div class="hero-content">
-          <div class="mac"></div>
-          <div class="app">
-            <p>
-              <strong>
-                Precio:
-              </strong>
-            <span>-</span>
-            </p>
-            <p>
-              <strong>
-                Precio oferta:
-              </strong>
-              <span>-</span>
-            </p>
-            <p>
-              <strong>
-                Precio Final:
-              </strong>
-              <span>-</span>
-            </p>
-            <button class="button" id="make-offer">Regatear</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+
   
   <script>
- 
+    const crateStore = ( reducer, initialState ) => {
+      let state = initialState
+      const getState = () => state
+
+      const dispatch = (action) => {
+        state = reducer(state, action)
+      }
+      const subscribe = () => {
+        
+      }
+      return{
+        getState,
+        dispatch,
+        subscribe,
+      }
+    }
+
+    const reducer = (state, action) => {
+      return action
+
+    }
+
+    const store = createStore ( reducer,'initial application status' )
+    // store.dispatch()
+    // store.getState()
+    // store.subscribe()
+
+    store.dispatch('voy a cambiar algo')
   </script>
 </body>
+
 </html>
