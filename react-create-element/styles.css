@@ -1,11 +1,11 @@
 body {
-  background-color: #2c2e31;
+  background-color: #303133;
   margin: 0;
   font-family: system-ui;
-  color: #252323;
+  color: #a7a6a6;
 }
 h2{
-  color: #dbdbdb;
+  /* color: #474545; */
 }
 
 .wrapper {
@@ -16,6 +16,8 @@ h2{
 
 .user {
   background-image: linear-gradient(to bottom, #a51111 0%, #ff0000 130px,rgba(0,0,0,.15) 130px, rgba(0,0,0,.15) 141px, rgb(255, 255, 255) 131px, rgb(197, 197, 197) 100%);
+
+  /* background-image: linear-gradient(to bottom, #030303 0%, #131111 130px,rgb(231, 199, 15) 130px, rgb(235, 194, 12) 141px, rgb(20, 20, 20) 131px, rgb(19, 18, 18) 100%); */
   text-align: center;
   overflow: hidden;
   padding: 20px;
@@ -31,5 +33,6 @@ h2{
   border-radius: 50%;
   border: 5px solid white;
   box-shadow:0px 0px 0px 8px rgb(32, 32, 32);;
+
 }
 
